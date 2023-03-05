@@ -8,7 +8,7 @@ phases:
   build:
     commands:
       - npm run build
-      - aws s3 sync build/ s3://<your-s3-bucket-name>/
+      - aws s3 sync build/ s3://cp01/
 artifacts:
   files:
     - '**/*'
